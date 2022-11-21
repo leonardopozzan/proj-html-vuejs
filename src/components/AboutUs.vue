@@ -60,7 +60,7 @@ section{
         position: relative;
         background-color: $bg-acqua;
         width: 90%;
-        padding: 6rem 0;
+        padding: 5rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
