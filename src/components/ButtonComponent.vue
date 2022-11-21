@@ -14,5 +14,6 @@
 .my-btn{
     text-transform: uppercase;
     padding: 0.7rem 3rem;
+    border: 0;
 }
 </style>

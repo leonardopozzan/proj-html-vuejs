@@ -72,9 +72,7 @@ header{
         }
         .title{
             padding: 2rem 0;
-            color: $white;
-            font-size: 4.5rem;
-            font-weight: bold;
+            @include myTitle(4.5rem);
             line-height: 4rem;
         }
         

@@ -1,6 +1,6 @@
 // import reactive from 'vue';
 
-const navbar =[
+const navbar = [
     {title:'home',url:'#'},
     {title:'about',url:'#about-us'},
     {title:'projects',url:'#project'},

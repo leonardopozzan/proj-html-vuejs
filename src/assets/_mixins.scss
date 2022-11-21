@@ -1,0 +1,7 @@
+@use './variables' as*;
+@mixin myTitle($size : 3rem) {
+    text-transform: uppercase;
+    color: $white;
+    font-weight: bold;
+    font-size: $size;
+}
