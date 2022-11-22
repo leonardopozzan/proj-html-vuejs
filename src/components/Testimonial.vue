@@ -31,7 +31,7 @@ import { cardTestimonials } from '../data/store';
 @use '../assets/mixins' as *;
 section{
     background-color: $bg-blue-dark;
-    padding-bottom: 400px;
+    padding-bottom: 10rem;
     .line{
         width: 50px;
         background-color: $bg-acqua;
