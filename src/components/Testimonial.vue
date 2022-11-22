@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container">
+        <div class="my-container">
             <div class="d-flex align-items-center justify-content-center">
                 <div class="sub-title flex-grow-1">testimonials</div>
                 <div class="line"></div>
@@ -53,7 +53,7 @@ section{
     }
     .cards{
         display: flex;
-        width: 95%;
+        width: 98%;
         margin-left: auto;
         background-color: $white;
     }

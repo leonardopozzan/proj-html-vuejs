@@ -1,6 +1,6 @@
 <template>
     <section id="project">
-        <div class="container">
+        <div class="my-container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="col-8">
                     <div class="d-flex align-items-center">
@@ -16,8 +16,8 @@
             </div>
             <div class="row">
                 <div class="col-4"><img src="img/carousel-1.jpg" alt=""></div>
-                <div class="col-4"><img src="img/carousel-1.jpg" alt=""></div>
-                <div class="col-4"><img src="img/carousel-1.jpg" alt=""></div>
+                <div class="col-4"><img src="img/carousel-2.jpg" alt=""></div>
+                <div class="col-4"><img src="img/carousel-3.jpg" alt=""></div>
             </div>
         </div>
     </section>
@@ -43,7 +43,7 @@ section{
         margin-right: 1rem;
     }
     .sub-title{
-        color: $text-grey;
+        color: $white;
         text-transform: uppercase;
     }
     .title{

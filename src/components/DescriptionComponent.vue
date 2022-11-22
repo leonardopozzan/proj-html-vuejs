@@ -1,13 +1,15 @@
 <template>
-    <section>
-        <div class="d-flex align-items-center pb-5 mb-4">
-            <div class="title">our consultants can help you</div>
-            <div class="line"></div>
-        </div>
-        <div class="cards">
-            <CardDescription  v-for="(el,i) in cardDescription" :key="i" :logo="el.logo" :title="el.title" :overview="el.overview" />
-        </div>
-    </section>
+    <div class="bg-blue">
+        <section>
+            <div class="d-flex align-items-center pb-5 mb-4">
+                <div class="title">our consultants can help you</div>
+                <div class="line"></div>
+            </div>
+            <div class="cards">
+                <CardDescription  v-for="(el,i) in cardDescription" :key="i" :logo="el.logo" :title="el.title" :overview="el.overview" />
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
@@ -28,10 +30,13 @@ import {cardDescription} from '../data/store'
 @use '../assets/mixins' as *;
 
 section{
-    padding: 7rem 0 5rem 20rem;
+    width: 98%;
+    margin-left: auto;
+    padding: 6rem 0 5rem 10rem;
+    background-color: $white;
     .title{
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 600;
     }
     .line{

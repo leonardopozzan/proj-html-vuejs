@@ -13,7 +13,8 @@
 @use '../assets/mixins' as *;
 .my-btn{
     text-transform: uppercase;
-    padding: 0.7rem 3rem;
+    padding: 1.3rem 4.5rem;
+    font-size: 1.3rem;
     border: 0;
 }
 </style>

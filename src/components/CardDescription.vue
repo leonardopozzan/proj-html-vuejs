@@ -1,7 +1,7 @@
 <template>
     <div class="my-card">
         <div class="logo"><i :class="logo"></i></div>
-        <div class="ps-4">
+        <div class="ps-5">
             <div class="title pb-2">{{title}}</div>
             <div class="overview">{{overview}}</div>
         </div>
@@ -28,19 +28,22 @@
     padding: 0 10rem 5rem 0;
     .logo{
         flex-shrink: 0;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
         text-align: center;
         border-radius: 50%;
         background-color: $bg-red;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $white;
     }
     .title{
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+    }
+    .overview{
+        font-size: 1.2rem;
     }
 }
 </style>

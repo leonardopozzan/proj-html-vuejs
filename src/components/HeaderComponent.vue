@@ -1,16 +1,16 @@
 <template>
     <header>
-        <div class="container text-uppercase">
+        <div class="my-container text-uppercase">
             <nav class="d-flex align-items-center justify-content-between">
                 <div class="img-box"><img src="img/logotype.png" alt="logo"></div>
-                <ul class="m-0 d-flex">
+                <ul class="m-0 d-flex fw-bold">
                     <li v-for="(el,i) in navbar" :key="i" class="px-3 py-4"><a href="el.url">{{el.title}}</a></li>
                 </ul>
             </nav>
             <div class="jumbo">
                 <div class="d-flex align-items-center">
                     <div class="line"></div>
-                    <div class="sub-title">always the best way you need it</div>
+                    <div class="sub-title">alwats the best way you need it</div>
                 </div>
                 <div class="title">the best business consulting</div>
                 <div>
@@ -59,10 +59,10 @@ header{
         }
     }
     .jumbo{
-        width: 40%;
+        width: 60%;
         padding: 12rem 0;
         .sub-title{
-            color: $text-grey;
+            color: $white;
         }
         .line{
             width: 50px;
@@ -72,19 +72,20 @@ header{
         }
         .title{
             padding: 2rem 0;
-            @include myTitle(4.5rem);
-            line-height: 4rem;
+            @include myTitle(7rem);
+            line-height: 6.5rem;
         }
         
         .play{
             color: $bg-acqua-button;
-            width: 40px;
-            height: 40px;
+            width: 55px;
+            height: 55px;
             text-align: center;
-            line-height: 40px;
+            line-height: 55px;
             border: 1px solid $white;
             border-radius: 50%;
             margin-left: 1.5rem;
+            font-size: 1.4rem;
         }
     }
 }

@@ -14,8 +14,8 @@
             </div>
         </div>
         <div class="info">
-            <div class="col-4 pe-5">we help to deliver the business case</div>
-            <div class="col-4 ps-5">When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow</div>
+            <div class="col-4 pe-5 me-5">we help to deliver the business case</div>
+            <div class="col-4 ps-5 ps-5">When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow</div>
             <ButtonComponent text="get started" bgColor="#F00E2E" class="my-btn"/>
         </div>
     </section>
@@ -35,6 +35,8 @@ section{
     background-color: $bg-blue-dark;
     .img-box{
         width: 55%;
+        height: 600px;
+        overflow: hidden;
     }
     .box{
         width: 40%;
@@ -47,7 +49,7 @@ section{
         }
         .sub-title{
             text-transform: uppercase;
-            color: $text-grey;
+            color: $white;
         }
         .title{
             @include myTitle(3.5rem);
@@ -59,8 +61,8 @@ section{
     .info{
         position: relative;
         background-color: $bg-acqua;
-        width: 90%;
-        padding: 5rem 0;
+        width: 98%;
+        padding: 7rem 0;
         display: flex;
         align-items: center;
         justify-content: center;

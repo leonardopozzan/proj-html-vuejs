@@ -1,5 +1,5 @@
 @use './variables.scss' as *;
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 $fa-font-path : "./webfonts";
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
@@ -13,7 +13,7 @@ $fa-font-path : "./webfonts";
     box-sizing: border-box;
 }
 body{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 img{
     max-width: 100%;
@@ -23,4 +23,11 @@ a{
 }
 ul{
     list-style: none;
+}
+.my-container{
+    width: 96%;
+    margin: auto;
+}
+.bg-blue{
+    background-color: $bg-blue-dark;
 }
