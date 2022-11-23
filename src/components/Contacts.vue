@@ -33,7 +33,7 @@ section{
         }
         .sub-title{
             font-size: 1.2rem;
-            color: $text-light-grey;
+            color: $white-op;
             padding: 1rem 2rem;
         }
     }

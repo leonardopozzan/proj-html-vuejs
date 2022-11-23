@@ -3,8 +3,11 @@
         <div class="my-container text-uppercase">
             <nav class="d-flex align-items-center justify-content-between">
                 <div class="img-box"><img src="img/logotype.png" alt="logo"></div>
-                <ul class="m-0 d-flex fw-bold">
-                    <li v-for="(el,i) in navbar" :key="i" class="px-3 py-4"><a href="el.url">{{el.title}}</a><div class="my-border"></div></li>
+                <ul class="m-0 d-flex">
+                    <li v-for="(el,i) in navbar" :key="i" class="mx-3 py-4">
+                        <a href="el.url">{{el.title}}</a>
+                        <div class="my-border"></div>
+                    </li>
                 </ul>
             </nav>
             <div class="jumbo">
@@ -51,8 +54,26 @@ header{
         }
         ul{
             li{
+                position: relative;
                 a{
-                    color: $text-grey;
+                    color: $white-op;
+                }
+                &:first-child a{
+                    color: $white;
+                    font-weight: bold;
+                }
+                .my-border{
+                    height: 2px;
+                    width: 0;
+                    background-color: $white;
+                    z-index: 100;
+                    position: absolute;
+                    top: 0; left: 0;
+                    transition: 1s;
+                }
+                &:first-child .my-border, 
+                &:hover .my-border{
+                    width: 100%;
                 }
             }
         }
