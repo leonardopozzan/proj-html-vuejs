@@ -39,7 +39,7 @@ section{
         margin-left: 1rem;
     }
     .sub-title{
-        color: $text-grey;
+        color: $white;
         text-transform: uppercase;
         text-align: center;
     }

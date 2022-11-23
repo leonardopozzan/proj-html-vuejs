@@ -20,5 +20,4 @@ const cardTestimonials = [
     {img: 'img/avatar-3.jpg', name: 'Vera Duncan', firm: 'Amazon Inc.',overview: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow plants are noticed by when I hear the buzz of the little'},
 
 ]
-
 export  {navbar,cardDescription,cardTestimonials};

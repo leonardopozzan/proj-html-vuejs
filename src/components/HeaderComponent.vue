@@ -4,7 +4,7 @@
             <nav class="d-flex align-items-center justify-content-between">
                 <div class="img-box"><img src="img/logotype.png" alt="logo"></div>
                 <ul class="m-0 d-flex fw-bold">
-                    <li v-for="(el,i) in navbar" :key="i" class="px-3 py-4"><a href="el.url">{{el.title}}</a></li>
+                    <li v-for="(el,i) in navbar" :key="i" class="px-3 py-4"><a href="el.url">{{el.title}}</a><div class="my-border"></div></li>
                 </ul>
             </nav>
             <div class="jumbo">
@@ -51,9 +51,8 @@ header{
         }
         ul{
             li{
-                border-top: 2px solid transparent;
                 a{
-                    color: $white;
+                    color: $text-grey;
                 }
             }
         }

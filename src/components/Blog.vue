@@ -105,7 +105,7 @@ section{
                 }
                 .overview{
                     font-size: 1.1rem;
-                    color: $text-grey;
+                    color: $text-light-grey;
                 }
             }
         }

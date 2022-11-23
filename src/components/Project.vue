@@ -11,17 +11,12 @@
                 </div>
                 <div class="arrow">
                     <button @click="scrollLeft()"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button @click="scrollRignt()"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button @click="scrollRight()"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
             <div class="carousel-container">
                 <div class="carousel" ref="carousel">
-                    <div><img src="img/carousel-1.jpg" alt=""></div>
-                    <div><img src="img/carousel-2.jpg" alt=""></div>
-                    <div><img src="img/carousel-3.jpg" alt=""></div>
-                    <div><img src="img/carousel-1.jpg" alt=""></div>
-                    <div><img src="img/carousel-2.jpg" alt=""></div>
-                    <div><img src="img/carousel-3.jpg" alt=""></div>
+                    <ItemCarousel v-for="(el,i) in listPath" :key="i" :url="el" />
                 </div>
             </div>
         </div>
@@ -29,44 +24,47 @@
 </template>
 
 <script>
+import ItemCarousel from './ItemCarousel.vue';
 
     export default {
-        data(){
-            return{
-                i : 0
+    data() {
+        return {
+            i: 0,
+            listPath: ["img/carousel-1.jpg", "img/carousel-2.jpg", "img/carousel-3.jpg", "img/carousel-1.jpg", "img/carousel-2.jpg", "img/carousel-3.jpg"]
+        };
+    },
+    methods: {
+        scrollRight() {
+            if (this.i < 3) {
+                this.i++;
+                this.$nextTick(() => {
+                    this.$refs.carousel.style.transform = `translateX(calc((-1) * 100% * ${this.i} / 3 )`;
+                });
+            }
+            else {
+                this.i = 0;
+                this.$nextTick(() => {
+                    this.$refs.carousel.style.transform = null;
+                });
             }
         },
-        methods:{
-            scrollRignt(){
-                if(this.i < 3){
-                    this.i++;
-                    this.$nextTick(()=>{ 
-                    this.$refs.carousel.style.transform = `translateX(calc((-1) * 100% * ${this.i} / 3 - (0.333rem * ${this.i}))`
-                    })
-                }else{
-                    this.i = 0;
-                    this.$nextTick(()=>{ 
-                    this.$refs.carousel.style.transform = null;
-                    })
-                }
-                
-            },
-            scrollLeft(){
-                if(this.i > 0){
-                    this.i--;
-                    this.$nextTick(()=>{ 
-                    this.$refs.carousel.style.transform = `translateX(calc((-1) * 100% * ${this.i} / 3 - (0.333rem * ${this.i}))`
-                    })
-                }else{
-                    this.$nextTick(()=>{ 
+        scrollLeft() {
+            if (this.i > 0) {
+                this.i--;
+                this.$nextTick(() => {
+                    this.$refs.carousel.style.transform = `translateX(calc((-1) * 100% * ${this.i} / 3 )`;
+                });
+            }
+            else {
+                this.$nextTick(() => {
                     this.$refs.carousel.style.transform = `translateX(80px)`;
-                    setTimeout(()=>this.$refs.carousel.style.transform = null,200) 
-                    })
-                }
-                
+                    setTimeout(() => this.$refs.carousel.style.transform = null, 200);
+                });
             }
         }
-    }
+    },
+    components: { ItemCarousel }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -84,11 +82,6 @@ section{
         display: flex;
         width: 100%;
         transition: 1s;
-        & > *{
-            width: calc((100% - 2rem) / 3);
-            margin-left: 1rem;
-            flex-shrink: 0;
-        }
     }
     .line{
         width: 50px;

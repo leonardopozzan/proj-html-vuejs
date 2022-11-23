@@ -8,7 +8,7 @@
                     <div class="sub-title">about us</div>
                 </div>
                 <div class="title">we make your strategy work</div>
-                <div>
+                <div class="overview">
                     When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow plants are noticed when I hear the buzz of the little world among the stalks, and grow familiar indescribable forms of the insects and filies, then I fell the presence of the Almighty.
                 </div>
             </div>
@@ -55,6 +55,9 @@ section{
             @include myTitle(3.5rem);
             line-height: 3.2rem;
             padding: 2rem 0;
+        }
+        .overview{
+            color: $text-light-grey;
         }
     }
     

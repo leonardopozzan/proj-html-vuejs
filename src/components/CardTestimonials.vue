@@ -1,13 +1,13 @@
 <template>
     <div class="my-card" @mouseover="show=true" @mouseleave="show=false">
         <div class="inner-card" :class="{'text-white' : show}">
-                <div>
+                <div class="info">
                     {{object.overview}}
                 </div>
                 <div class="name">
                     {{object.name}}
                 </div>
-                <div>
+                <div class="info">
                     {{object.firm}}
                 </div>
             </div>
@@ -27,7 +27,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+@use '../assets/variables' as *;
+@use '../assets/mixins' as *;
 .my-card{
     width: calc(100% / 3);
     position: relative;
@@ -55,6 +56,9 @@
         .name{
             font-size: 1.6rem;
             font-weight: bold;
+        }
+        .info{
+            color: $text-light-grey;
         }
     }
 }
