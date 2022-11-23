@@ -106,6 +106,7 @@ header{
             border-radius: 50%;
             margin-left: 1.5rem;
             font-size: 1.4rem;
+            cursor: pointer;
         }
     }
 }

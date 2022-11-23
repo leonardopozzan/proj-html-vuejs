@@ -6,12 +6,14 @@
     <div class="chat" v-show="show">
       <h4 class="text-white text-center pt-4 pb-2">Send a message to our team</h4>
       <div class="inner-chat">
-        <div class="message">Hi, How can I help you?</div>
+        <Transition name="slide-left">
+          <div class="message" v-show="send">Hi, How can I help you?</div>
+        </Transition>
         <input type="text" class="input" placeholder="Send a message">
       </div>
     </div>
   </Transition>
-  <div class="chat-icon" @click="show = !show"><i class="fa-regular fa-comment"></i></div>
+  <div class="chat-icon" @click="showChat()"><i class="fa-regular fa-comment"></i></div>
   <Transition name="slide-up">
     <div class="back-top" @click="scrollToTop()" v-show="isTop"><i class="fa-solid fa-arrow-up"></i></div>
   </Transition>
@@ -26,6 +28,7 @@ import MainComponent from './components/MainComponent.vue';
     data(){
       return{
         show: false,
+        send : false,
         isTop: false
       }
     },
@@ -33,6 +36,14 @@ import MainComponent from './components/MainComponent.vue';
         scrollToTop() {
             window.scrollTo(0, 0);
         },
+        showChat(){
+          this.show = !this.show;
+          if(this.show){
+            setTimeout(()=> this.send =true, 800)
+          }else{
+            setTimeout(()=> this.send =false, 800)
+          }
+        }
     },
     mounted(){
         const that = this
@@ -146,6 +157,19 @@ import MainComponent from './components/MainComponent.vue';
     .slide-up-enter-from,
     .slide-up-leave-to {
         transform: translateY(50px);
+        opacity: 0;
+    }
+    .slide-left-enter-active {
+        transition: all 0.5s ease-out;
+    }
+
+    .slide-left-leave-active {
+        transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+    }
+
+    .slide-left-enter-from,
+    .slide-left-leave-to {
+        transform: translateX(-50px);
         opacity: 0;
     }
 </style>
