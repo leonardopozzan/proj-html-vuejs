@@ -17,7 +17,7 @@
                 </div>
                 <div class="title">the best business consulting</div>
                 <div>
-                    <ButtonComponent text="read more" bgColor="#39FFBF"/>
+                    <ButtonComponent text="read more" bgColor="#39FFBF" bgColorHover="#F00E2E" />
                     <i class="fa-solid fa-play play"></i>
                 </div>
             </div>

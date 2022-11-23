@@ -1,12 +1,12 @@
 // import reactive from 'vue';
 
 const navbar = [
-    {title:'home',url:'#'},
-    {title:'about',url:'#about-us'},
-    {title:'projects',url:'#project'},
-    {title:'services',url:'#testimonial'},
-    {title:'blog',url:'#blog'},
-    {title:'contact',url:'#contact'}
+    {title:'home',url:'#nogo'},
+    {title:'about',url:'#nogo'},
+    {title:'projects',url:'#nogo'},
+    {title:'services',url:'#nogo'},
+    {title:'blog',url:'#nogo'},
+    {title:'contact',url:'#nogo'}
 ]
 const cardDescription= [
     {logo: 'fa-solid fa-chart-simple', title: 'statistical consulting', overview:'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a'},
