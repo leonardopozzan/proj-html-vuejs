@@ -8,7 +8,7 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="title">the recent news you must read it</div>
-                    <ButtonComponent text="view all" bgColor="#39FFBF" bgColorHover="#F00E2E" />
+                    <ButtonComponent text="view all" bgColor="#ffc318" bgColorHover="#F00E2E" />
                 </div>
             </div>
             <div class="row cards">

@@ -4,7 +4,7 @@
         <div class="box">
             <div class="title">let's talk about work</div>
             <div class="sub-title">A wonderful serenity has taken possession Far far away, behind the word mountains.</div>
-            <ButtonComponent text="get started" bgColor="#1F1E38" textColor="#FFF" bgColorHover="#35FFBF" bool="true" />
+            <ButtonComponent text="get started" bgColor="#1F1E38" textColor="#FFF" bgColorHover="#ffc318" bool="true" />
         </div>
     </section>
 </template>
